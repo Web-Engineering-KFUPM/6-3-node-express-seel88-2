@@ -1,13 +1,16 @@
 import express from "express";
+import cors from "cors";
 
-// TODO 1: Import and Create express app instance
+// TODO 1: Initialize Express app and Define PORT
 const app = express();
-
-// TODO 1: Define server port
 const PORT = 3000;
 
 // TODO 4: Import and Apply CORS middleware
 app.use(cors());
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
 
 // TODO 5: Import and apply Morgan middleware
 
