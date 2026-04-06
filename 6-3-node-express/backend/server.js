@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-
+import morgan from "morgan";
 // TODO 1: Initialize Express app and Define PORT
 const app = express();
 const PORT = 3000;
@@ -13,7 +13,19 @@ app.listen(PORT, () => {
 });
 
 // TODO 5: Import and apply Morgan middleware
+// TODO 5: Apply Morgan middleware
+app.use(morgan("dev"));
 
+// (Leave this empty for now until we do TODO 6)
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});// TODO 5: Apply Morgan middleware
+app.use(morgan("dev"));
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
 
 // TODO 6.1: Create root route "/"
 
