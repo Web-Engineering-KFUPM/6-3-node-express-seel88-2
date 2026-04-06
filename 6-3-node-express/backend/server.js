@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
+import { getRandomQuote } from "./quotes.js";
 // TODO 1: Initialize Express app and Define PORT
 const app = express();
 const PORT = 3000;
