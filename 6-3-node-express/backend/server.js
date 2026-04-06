@@ -28,12 +28,12 @@ app.listen(PORT, () => {
 });
 
 // TODO 6.1: Create root route "/"
-app.get("/", (req, res) => {
-  res.send("Welcome to the Quote API!");
+app.get('/', (req, res) => {
+  res.send('Welcome to the Quote API!');
 });
 
 // TODO 6.2: Create "/api/quote" route
-app.get("/api/quote", (req, res) => {
+app.get('/api/quote', (req, res) => {
   const quote = getRandomQuote();
   res.json({ quote: quote });
 });
