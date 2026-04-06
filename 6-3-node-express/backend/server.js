@@ -1,7 +1,10 @@
+import express from "express";
+
 // TODO 1: Import and Create express app instance
+const app = express();
 
 // TODO 1: Define server port
-
+const PORT = 3000;
 
 // TODO 4: Import and Apply CORS middleware
 
